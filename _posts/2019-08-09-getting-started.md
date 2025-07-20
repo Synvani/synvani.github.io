@@ -1,4 +1,5 @@
 ---
+published: false
 title: Getting Started
 description: >-
   Get started with Chirpy basics in this comprehensive overview.

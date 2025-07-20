@@ -1,4 +1,5 @@
 ---
+published: false
 title: Customize the Favicon
 author: cotes
 date: 2019-08-11 00:34:00 +0800
@@ -25,10 +26,10 @@ And then copy the remaining image files (`.PNG`{: .filepath} and `.ICO`{: .filep
 
 The following table will help you understand the changes to the favicon files:
 
-| File(s)             | From Online Tool                  | From Chirpy |
-|---------------------|:---------------------------------:|:-----------:|
-| `*.PNG`             | ✓                                 | ✗           |
-| `*.ICO`             | ✓                                 | ✗           |
+| File(s) | From Online Tool | From Chirpy |
+| ------- | :--------------: | :---------: |
+| `*.PNG` |        ✓         |      ✗      |
+| `*.ICO` |        ✓         |      ✗      |
 
 <!-- markdownlint-disable-next-line -->
 >  ✓ means keep, ✗ means delete.
