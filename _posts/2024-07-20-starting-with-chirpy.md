@@ -9,7 +9,7 @@ render_with_liquid: false
 description: 
 ---
 
-This post is about kickstarting a new blogging website using [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy), an awesome [Jekyll](https://jekyllrb.com/) theme, but doing it the complicated way - forking the repository for the enhanced ability to modify features or UI. It's not recommended unless you're familiar with Jekyll since it presents plenty of challenges during upgrades, but if you're a fan of customizations and also keen to learn new things, I believe it definitely is worth the journey.
+This post is about kickstarting a new blogging website using [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) (an awesome [Jekyll](https://jekyllrb.com/) theme), but doing it the complicated way - forking the repository for the enhanced ability to modify features or UI. It's not recommended unless you're familiar with Jekyll (it presents plenty of challenges during upgrades), but if you're a fan of customizations and keen to learn new things - I believe it is definitely worth the journey.
 
 ## Forking the Theme
 
