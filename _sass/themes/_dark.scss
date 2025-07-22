@@ -74,9 +74,9 @@
   --card-hover-bg: #49555c;
   --card-shadow: rgb(21, 21, 21, 0.72) 0 6px 18px 0,
     var(--main-border-color) 0 0 0 1px;
-  --kbd-wrap-color: #6a6a6a;
+  --kbd-wrap-color: var(--text-muted-color); /* #6a6a6a; */
   --kbd-text-color: #d3d3d3;
-  --kbd-bg-color: #242424;
+  --kbd-bg-color: var(--prompt-info-bg); /* #242424; */
   --prompt-text-color: rgb(216, 212, 212, 0.75);
   --prompt-tip-bg: rgb(22, 60, 36, 0.64);
   --prompt-tip-icon-color: rgb(15, 164, 15, 0.81);
