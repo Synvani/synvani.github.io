@@ -10,16 +10,16 @@ description:
 media_subpath: '/assets/img/posts/kickstarting-chirpy'
 ---
 
-This post is about kickstarting a new blogging website using [Chirpy](chirpy-repo) (an awesome [Jekyll](jekyll) theme), but doing it the complicated way – forking the repository for the enhanced ability to modify features or UI. It's not recommended unless you're familiar with Jekyll (it presents plenty of challenges during upgrades), but if you're a fan of customizations and keen to learn new things – I believe it is definitely worth the journey.
+This post is about kickstarting a new blogging website using [Chirpy][chirpy-repo] (an awesome [Jekyll][jekyll] theme), but doing it the complicated way – forking the repository for the enhanced ability to modify features or UI. It's not recommended unless you're familiar with Jekyll (it presents plenty of challenges during upgrades), but if you're a fan of customizations and keen to learn new things – I believe it is definitely worth the journey.
 
-If you prefer to take it easy albeit with much less customizability, you can always opt for the Starter theme – skip this post completely and read more on [Chirpy's documentation](chirpy-docs-starter). If you wish to have full access to all the bits and bytes, continue reading here! The steps below may seem a little different compared to the official documentation, but here's how it worked for me.
+If you prefer to take it easy albeit with much less customizability, you can always opt for the Starter theme – skip this post completely and read more on [Chirpy's documentation][chirpy-docs-starter]. If you wish to have full access to all the bits and bytes, continue reading here! The steps below may seem a little different compared to the official documentation, but here's how it worked for me.
 
 ## Forking the Theme
 
-As already described in [Chirpy's documentation](chirpy-docs-fork):
+As already described in [Chirpy's documentation][chirpy-docs-fork]:
 
 1. Sign in to GitHub.
-2. [Fork the theme repository](chirpy-repo-fork).
+2. [Fork the theme repository][chirpy-repo-fork].
 3. Name the new repository `<username>.github.io`, replacing `username` with your lowercase GitHub username.
 
 ## GitHub Actions
@@ -52,7 +52,7 @@ As already described in [Chirpy's documentation](chirpy-docs-fork):
     title: Synvan # the main title
     ```
     {: file='_config.yml'}
-4. Commit the changes made to `_config.yml`{: .filepath}, make sure to follow the [commitlint rules](commitlint-rules) otherwise your commit would fail – write something along the lines of `style: update to _config.yml`.
+4. Commit the changes made to `_config.yml`{: .filepath}, make sure to follow the [commitlint rules][commitlint-rules] otherwise your commit would fail – write something along the lines of `style: update to _config.yml`.
 5. You'll notice that once the commit is accepted and applied, nothing really happens and your website is not up and online just yet (reminder, your `url` should be `https://<username>.github.io`). That's because the workflow to **Deploy and Build** the website isn't part of our available workflows!
    ![Workflows missing](3_github-actions_build-n-deploy-missing.png){: .normal w='300'}
 
@@ -61,10 +61,10 @@ As already described in [Chirpy's documentation](chirpy-docs-fork):
 1. Within GitHub files browser, navigate to `.github` directory, then `workflows`, then `starter`.
 2. Inside `starter` directory you'll find `pages-deploy.yml`{: .filepath} – the missing workflow!
 3. Move or copy `pages-deploy.yml`{: .filepath} file one directory up, so it is within the `workflows` directory.
-   - Move file – refer to [GitHub Docs](github-docs-move-file) to learn how to move a file via GitHub's web interface.
+   - Move file – refer to [GitHub Docs][github-docs-move-file] to learn how to move a file via GitHub's web interface.
    - Copy file – can simply download `pages-deploy.yml`{: .filepath} to your local machine and then upload it to `starter` directory.
-4. Don't forget to write a valid commit according to [commitlint rules](commitlint-rules), for example: _fix: move pages-deploy.yml to workflows directory_
-5. You'll notice that our commit failed – that's because our website is missing critical files that need to be compiled by us. This is mentioned in [Chirpy's FAQ](chirpy-faq-upgrade), although it may not be super clear to non-Jekyll experts where exactly this part should be added or performed...
+4. Don't forget to write a valid commit according to [commitlint rules][commitlint-rules], for example: _fix: move pages-deploy.yml to workflows directory_
+5. You'll notice that our commit failed – that's because our website is missing critical files that need to be compiled by us. This is mentioned in [Chirpy's FAQ][chirpy-faq-upgrade], although it may not be super clear to non-Jekyll experts where exactly this part should be added or performed...
    ![Workflows missing](4_build-n-deploy-failed.png){: .normal }
 
 ## Adding **npm** Install & Build Stuff
@@ -103,7 +103,7 @@ Finally, commit the changes and don't forget to write a valid commit message, fo
 
 A few minutes after our last commit you should be able to see your new website proudly deployed to `https://<username>.github.io`! 
 
-The next step is to create a local development environment so you could start working on your website conveniently and efficiently. Chirpy's documentation has a great section on that which you can follow-up on [here](chirpy-docs-dev-env). Good luck!
+The next step is to create a local development environment so you could start working on your website conveniently and efficiently. Chirpy's documentation has a great section on that which you can follow-up on [here][chirpy-docs-dev-env]. Good luck!
 
 
 
