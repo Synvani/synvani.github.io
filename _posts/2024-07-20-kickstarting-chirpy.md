@@ -7,7 +7,7 @@ categories: [Blogging, Jekyll]
 tags: [Chirpy, Jekyll, GitHub Pages]
 render_with_liquid: false
 description: 
-media_subpath: '/assets/img/posts/kickstarting-chirpy'
+media_subpath: '/assets/img/posts/01_kickstarting-chirpy'
 ---
 
 This post is about kickstarting a new blogging website using [Chirpy][chirpy-repo] (an awesome [Jekyll][jekyll] theme), but doing it the complicated way – forking the repository for the enhanced ability to modify features or UI. It's not recommended unless you're familiar with Jekyll (it presents plenty of challenges during upgrades), but if you're a fan of customizations and keen to learn new things – I believe it is definitely worth the journey.
