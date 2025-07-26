@@ -16,7 +16,7 @@
   --blockquote-text-color: var(--text-muted-color); /* #868686; */
   --link-color: rgb(138, 180, 248);
   --link-underline-color: rgb(82, 108, 150);
-  --button-bg: var(--sidebar-bg); /* #1e1e1e; */
+  --button-bg: var(--sidebar-bg-placeholder); /* #1e1e1e; */
   --btn-border-color: var(--main-border-color); /* #2e2f31; */
   --btn-backtotop-color: var(--text-color);
   --btn-backtotop-border-color: #212122;
@@ -26,7 +26,7 @@
   --img-bg: radial-gradient(
     circle,
     var(--main-bg) 0%,
-    var(--sidebar-bg) 100%
+    var(--sidebar-bg-placeholder) 100%
   ); /* radial-gradient(circle, rgb(22, 22, 24) 0%, rgb(32, 32, 32) 100%); */
 
   --shimmer-bg: linear-gradient(
@@ -39,11 +39,16 @@
   /* Sidebar */
   --site-title-color: rgb(132, 170, 207); /* #717070; */
   --site-subtitle-color: var(--text-muted-color); /* #868686; */
-  --sidebar-bg: rgb(22, 33, 43); /* rgb(20, 31, 43);  #1e1e1e; */
+  --sidebar-bg-placeholder: rgb(22, 33, 43); /* rgb(20, 31, 43);  #1e1e1e; */
+  --sidebar-bg: radial-gradient(
+    circle,
+    rgb(27, 43, 54) 0%,
+    var(--sidebar-bg-placeholder) 100%
+  );
   --sidebar-border-color: var(--main-border-color); /* #292929; */
   --sidebar-muted-color: var(--text-muted-color); /* #868686; */
   --sidebar-active-color: rgb(255, 255, 255, 0.95);
-  --sidebar-hover-bg: rgb(32, 47, 63); /* #262626; */
+  --sidebar-hover-bg: rgb(34, 52, 71); /* #262626; */
   --sidebar-btn-bg: rgb(29, 41, 53); /* #232328; */
   --sidebar-btn-color: var(--text-muted-color); /* #787878; */
   --avatar-border-color: rgb(102, 123, 141, 0.9); /* rgb(206, 206, 206, 0.9); */
@@ -65,7 +70,9 @@
   --toc-popup-border-color: var(--main-border-color); /* #373737; */
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: rgb(28, 41, 53); /*  #252526; odd rows of table */
-  --tb-even-bg: var(--sidebar-bg); /* rgb(31, 31, 34); even rows of table */
+  --tb-even-bg: var(
+    --sidebar-bg-placeholder
+  ); /* rgb(31, 31, 34); even rows of table */
   --tb-border-color: var(--tb-odd-bg);
   --footnote-target-bg: rgb(63, 81, 181);
   --btn-share-color: #6c757d;

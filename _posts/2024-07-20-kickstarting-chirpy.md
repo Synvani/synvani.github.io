@@ -4,7 +4,7 @@ title: Kickstarting Chirpy with a Fork
 author: synvan
 date: 2024-07-20 14:10:00 +0200
 categories: [Blogging, Jekyll]
-tags: [Chirpy, Jekyll, GitHub Pages]
+tags: [Chirpy, Jekyll, GitHub Pages, Blogging]
 render_with_liquid: false
 description: 
 media_subpath: '/assets/img/posts/01_kickstarting-chirpy'
@@ -65,7 +65,7 @@ As already described in [Chirpy's documentation][chirpy-docs-fork]:
    - Copy file – can simply download `pages-deploy.yml`{: .filepath} to your local machine and then upload it to `starter` directory.
 4. Don't forget to write a valid commit according to [commitlint rules][commitlint-rules], for example: _fix: move pages-deploy.yml to workflows directory_
 5. You'll notice that our commit failed – that's because our website is missing critical files that need to be compiled by us. This is mentioned in [Chirpy's FAQ][chirpy-faq-upgrade], although it may not be super clear to non-Jekyll experts where exactly this part should be added or performed...
-   ![Workflows missing](4_build-n-deploy-failed.png){: .normal }
+   ![Build failed](4_build-n-deploy-failed.png){: .normal }
 
 ## Adding **npm** Install & Build Stuff
 
