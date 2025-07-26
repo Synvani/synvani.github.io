@@ -2,7 +2,7 @@
 published: true
 title: Custom Domain for Jekyll
 author: synvan
-date: 2024-07-20 14:10:00 +0200
+date: 2024-08-03 14:10:00 +0200
 categories: [Blogging, Jekyll]
 tags: [Chirpy, Jekyll, GitHub Pages, Domain]
 render_with_liquid: false
