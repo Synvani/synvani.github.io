@@ -98,7 +98,7 @@ theme_mode: dark # [light | dark]
 cdn: # "https://chirpy-img.netlify.app" # [AVIRAM 2024-01-10] Not needed since I will be loading images locally(?)
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/avatar/SP_Avatar.jpg"
+avatar: "/assets/img/avatar/SP_Avatar.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
