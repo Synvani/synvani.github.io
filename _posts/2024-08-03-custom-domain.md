@@ -98,6 +98,6 @@ You've now got a custom domain that makes your Jekyll site feel more like your o
 [jekyll]: https://jekyllrb.com/
 [cloudflare-home]: https://www.cloudflare.com/
 [github-docs-verify-domain]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages
-[cloudflare-dash]: dash.cloudflare.com
+[cloudflare-dash]: https://dash.cloudflare.com/
 [github-docs-apex-domain]: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain
 
