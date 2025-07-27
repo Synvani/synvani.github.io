@@ -67,6 +67,7 @@ I assume you're keeping it simple and just want to configure an apex (root) doma
 - If your DNS provider supports `ALIAS` or `ANAME` at the root, go with that as it’s lower maintenance (though Cloudflare does not support `ALIAS`/`ANAME` at this point).
 - Otherwise, create four `A` records pointing to GitHub’s IPv4 addresses.
 - If you want IPv6 support, also add the `AAAA` records GitHub recommends, but keep the `A` records due to spotty IPv6 adoption.
+- Create additional `CNAME` record pointing from `www` to `<username>.github.io`.
 
 ### DNS Records Breakdown
 - `A` Record: 
@@ -83,8 +84,8 @@ I assume you're keeping it simple and just want to configure an apex (root) doma
   - **How it works (simplified):** When a DNS server receives a query for an `ALIAS` record, it looks up the `A` or `AAAA` records of the target domain and returns those as the answer, effectively hiding the underlying IP address change from the user. 
   - **Availability:** Not a standard DNS record type, but offered by some DNS providers.
 
-Screenshot of my Cloudflare dashboard after plugging in `A` and `AAAA` records:
-![DNS records on Cloudflare](04_dns-records.png){: .normal }
+**Here's creenshot of my Cloudflare dashboard after plugging in `A` and `AAAA` records:**
+![DNS records on Cloudflare](04_dns-records-proxied.png){: .normal }
 
 ## Domain Successfully Applied
 After some time you should see a successful DNS check on GitHub repository settings:
@@ -92,7 +93,7 @@ After some time you should see a successful DNS check on GitHub repository setti
 
 Reminder that DNS record updates typically take between a few minutes and 48 hours to propagate across the internet, though some cases may take up to 72 hours. The exact time depends on various factors, including the Time To Live (TTL) setting for the record, the type of record, and the caching behavior of DNS servers.
 
-You've now got a custom domain that makes your Jekyll site feel more like your own space. Just give DNS a little time to kick in, and you’re live!
+You've now got a custom domain that makes your Jekyll site feel more like your own space. Just give DNS a little time to kick in!
 
 
 [jekyll]: https://jekyllrb.com/
