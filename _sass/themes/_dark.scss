@@ -31,9 +31,9 @@
 
   --shimmer-bg: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(58, 55, 55, 0.4) 50%,
-    rgba(255, 255, 255, 0) 100%
+    rgb(255, 255, 255, 0) 0%,
+    rgb(35, 52, 71, 0.4) 50%,
+    rgb(255, 255, 255, 0) 100%
   );
 
   /* Sidebar */
@@ -114,7 +114,7 @@
   --highlight-bg-color: rgb(11, 18, 24); /* #151515; */
   --highlighter-rouge-color: #c9def1;
   --highlight-lineno-color: #808080;
-  --inline-code-bg: rgba(255, 255, 255, 0.05);
+  --inline-code-bg: rgb(255, 255, 255, 0.05);
   --code-color: #b0b0b0;
   --code-header-text-color: var(--text-muted-color); /* #6a6a6a; */
   --code-header-muted-color: var(--main-border-color); /* #353535; */
