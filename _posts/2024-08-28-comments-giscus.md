@@ -8,6 +8,10 @@ tags: [Chirpy, Jekyll, GitHub Pages, Blog, Comments, Giscus]
 render_with_liquid: false
 description: 
 media_subpath: '/assets/img/posts/03_comments-giscus'
+image:
+  path: /00_comments-giscus.jpg
+  alt: 
+  in_post: false
 ---
 
 Comment sections are a great addition to any blog post for community building and for getting instant feedback about your content. In this guide we’ll walk through setting up [Giscus][giscus] and dropping the widget into a blog in just a few easy steps.

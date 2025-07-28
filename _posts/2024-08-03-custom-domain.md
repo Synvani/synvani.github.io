@@ -8,6 +8,10 @@ tags: [Chirpy, Jekyll, GitHub Pages, Domain]
 render_with_liquid: false
 description: 
 media_subpath: '/assets/img/posts/02_custom-domain'
+image:
+  path: /00_custom-domain.jpg
+  alt: 
+  in_post: false
 ---
 
 Setting up a custom domain name for your [Jekyll][jekyll] website is a simple way to give a more professional and polished look. Instead of a generic address like `synvan.github.io`, you can switch to something cleaner like `synvan.com` or `synvan.io`. In this post, we'll go through how to set up a custom domain, step by step.

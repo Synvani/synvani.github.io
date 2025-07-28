@@ -8,6 +8,10 @@ tags: [Chirpy, Jekyll, GitHub Pages, Blogging]
 render_with_liquid: false
 description: 
 media_subpath: '/assets/img/posts/01_kickstarting-chirpy'
+image:
+  path: /00_kickstarting-chirpy.jpg
+  alt: 
+  in_post: false
 ---
 
 This post is about kickstarting a new blogging website using [Chirpy][chirpy-repo] (an awesome [Jekyll][jekyll] theme), but doing it the complicated way – forking the repository for the enhanced ability to modify features or UI. It's not recommended unless you're familiar with Jekyll (it presents plenty of challenges during upgrades), but if you're a fan of customizations and keen to learn new things – I believe it is definitely worth the journey.
@@ -28,14 +32,14 @@ As already described in [Chirpy's documentation][chirpy-docs-fork]:
 2. Navigate to the <kbd>Settings</kbd> tab.
 3. Click on <kbd>Pages</kbd> in the left-hand menu.
 4. Under `Build and Deployment` section,  change the `Source` to **GitHub Actions**.
-   ![Build source](1_github-actions_source.png){: .normal w='320' }
+   ![Build source](10_gh-actions_source.png){: .normal w='320' }
 5. Navigate to the <kbd>Actions</kbd> tab and click to enable workflows.
    <!-- markdownlint-capture -->
    <!-- markdownlint-disable -->
    > Since the repository already contains workflows (written by someone else), GitHub automatically disables them for security measures. It is good practice to review workflows before you run them.
    {: .prompt-info }
    <!-- markdownlint-restore -->
-   ![Workflows activation](2_github-actions_enable-workflows.png){: .normal }
+   ![Workflows activation](20_gh-actions_enable-workflows.png){: .normal }
 
 ## Modifications to **config.yml**
 
@@ -54,7 +58,7 @@ As already described in [Chirpy's documentation][chirpy-docs-fork]:
     {: file='_config.yml'}
 4. Commit the changes made to `_config.yml`{: .filepath}, make sure to follow the [commitlint rules][commitlint-rules] otherwise your commit would fail – write something along the lines of `style: update to _config.yml`.
 5. You'll notice that once the commit is accepted and applied, nothing really happens and your website is not up and online just yet (reminder, your `url` should be `https://<username>.github.io`). That's because the workflow to **Deploy and Build** the website isn't part of our available workflows!
-   ![Workflows missing](3_github-actions_build-n-deploy-missing.png){: .normal w='300'}
+   ![Workflows missing](30_gh-actions_build-n-deploy-missing.png){: .normal w='300'}
 
 ## Adding Deployment Workflow
 
@@ -65,7 +69,7 @@ As already described in [Chirpy's documentation][chirpy-docs-fork]:
    - Copy file – can simply download `pages-deploy.yml`{: .filepath} to your local machine and then upload it to `starter` directory.
 4. Don't forget to write a valid commit according to [commitlint rules][commitlint-rules], for example: _fix: move pages-deploy.yml to workflows directory_
 5. You'll notice that our commit failed – that's because our website is missing critical files that need to be compiled by us. This is mentioned in [Chirpy's FAQ][chirpy-faq-upgrade], although it may not be super clear to non-Jekyll experts where exactly this part should be added or performed...
-   ![Build failed](4_build-n-deploy-failed.png){: .normal }
+   ![Build failed](40_build-n-deploy-failed.png){: .normal }
 
 ## Adding **npm** Install & Build Stuff
 
