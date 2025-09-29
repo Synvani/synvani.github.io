@@ -6,7 +6,7 @@ date: 2024-08-03 14:10:00 +0200
 categories: [Blogging, Jekyll]
 tags: [Chirpy, Jekyll, GitHub Pages, Domain]
 render_with_liquid: false
-description: 
+description: Give your Jekyll site a professional touch with a custom domain.
 media_subpath: '/assets/img/posts/02_custom-domain'
 image:
   path: /00_custom-domain.jpg

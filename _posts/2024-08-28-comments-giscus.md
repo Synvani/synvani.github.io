@@ -6,7 +6,7 @@ date: 2024-08-28 14:10:00 +0200
 categories: [Blogging, Jekyll]
 tags: [Chirpy, Jekyll, GitHub Pages, Blog, Comments, Giscus]
 render_with_liquid: false
-description: 
+description: Learn how to quickly add a GitHub-powered comment section to your blog.
 media_subpath: '/assets/img/posts/03_comments-giscus'
 image:
   path: /00_comments-giscus.jpg

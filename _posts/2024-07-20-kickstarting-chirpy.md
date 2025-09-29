@@ -6,7 +6,7 @@ date: 2024-07-20 14:10:00 +0200
 categories: [Blogging, Jekyll]
 tags: [Chirpy, Jekyll, GitHub Pages, Blogging]
 render_with_liquid: false
-description: 
+description: A hands-on guide to forking the Chirpy Jekyll theme and setting up your own fully customizable blog from scratch.
 media_subpath: '/assets/img/posts/01_kickstarting-chirpy'
 image:
   path: /00_kickstarting-chirpy.jpg
