@@ -4,7 +4,7 @@ title: Avata in the Dark
 author: synvan
 date: 2024-09-20 14:10:00 +0200
 categories: [Product, Hobbies]
-tags: [Avata, DJI, Drones, FPV, Modeling, CAD, 3D Printing]
+tags: [Drones, FPV, CAD, 3D Modeling, 3D Printing]
 render_with_liquid: false
 description: Turning night-flight headaches into a product-style side project. My journey designing, testing, and iterating an LED mount for the DJI Avata.
 media_subpath: '/assets/img/posts/04_avata-in-the-dark'
@@ -76,7 +76,7 @@ _Mini-KPI plan: total added weight, impact on flight time, and whether the Avata
 
 ### Mountable Surfaces
 
-The initial step before getting down to actual design work would be deciding which part of the drone fuselage the LED mount should actually attach to. Inspecting the drone's bottom side reveals two potential areas for affixing an LED light:
+The initial step before getting down to actual design work would be deciding which part of the drone fuselage the LED mount should actually attach to. A quick look at the bottom showed me two potential spots where an LED could go:
 1. Attached to the relatively-wide & flat surface right below the VPS components.
 2. Attached to the diamond-shaped slot formed between the outer sides of the rotors. 
 
@@ -91,7 +91,7 @@ I decided to move forward with option #2 for these reasons:
 
 ### 3D Measurements
 
-Next, after deciding what component/part of the drone we are going to latch onto, we need to accurately measure that area of the drone in order to properly design a mounting solution that actually fits well. For hobbyists like me, the usual go-to tool would be a simple caliper, however, if I had the actual 3D model of the drone accessible in my modeling app, it would make life significantly easier. Luckily, a quick search in some 3D repositories landed me in [this Thingiverse webpage][dji-avata-model] featuring the DJI Avata body scanned for us by the good soul [goshes][goshes-thingiverse].
+Next, after deciding what component/part of the drone we are going to latch onto, we need to accurately measure that area of the drone in order to properly design a mounting solution that actually fits well. Normally I'd grab a caliper and start measuring, but finding a scanned 3D model online saved me a ton of trial-and-error. Luckily, a quick search in some 3D repositories landed me in [this Thingiverse webpage][dji-avata-model] featuring the DJI Avata body scanned for us by the good soul [goshes][goshes-thingiverse].
 
 I loaded the scanned object into my 3D modeling app (SolidWorks) and extracted the exact contour I needed for my mounting solution to fit. This little trick with 3D scanned objects is extremely useful and saved me at least a few iterations of caliper measuring, printing and testing the mount fit vs. real drone body.
 
@@ -127,16 +127,18 @@ With the 3D model wrapped up and saved as an STL, I headed over to a friend's pl
 
 ### Printing Material
 
-When it comes to hobbyist 3D printing, it usually comes down to PLA or PETG. PLA is kind of the "default" – it prints easily, doesn't warp much, and is perfect for quick prototypes or little decorative parts. PETG, on the other hand, is a bit tougher (literally). It needs higher temps and a bit more fine-tuning to avoid stringing, but it pays off with parts that are stronger, more flexible, and way better at handling moisture or outdoor use. I've found that once you get the hang of PETG, it's awesome for anything fsunctional, while PLA still wins for quick, clean prints with zero fuss. For the first run I treated the print like an MVP: go fast, validate fit, then iterate. PLA gave me a quick, clean prototype. Once the geometry is proven, PETG can be the "production" version with more durability.
+When it comes to hobbyist 3D printing, it usually comes down to PLA or PETG. PLA is kind of the "default" – it prints easily, doesn't warp much, and is perfect for quick prototypes. PETG, on the other hand, is a bit tougher (literally). It needs higher temps and a bit more fine-tuning to avoid stringing, but it pays off with parts that are stronger, more flexible, and way better at handling moisture or outdoor use. 
+
+For the first run I treated the print like an MVP: go fast, validate fit, then iterate. PLA gave me a quick, clean prototype. Once the geometry is proven, PETG can be the "production" version with more durability.
 
 ### Orientation
-Since our design uses flexible arms, it's quite clear the highest stress runs along the length of those arms. That means the way you orient the part on the print bed can make a huge difference in how strong (or weak) it ends up. By lining up the arms so the layer lines run along them instead of across them, you give the print way more resistance to snapping when flexed. It's one of those little tweaks that doesn't take any extra time but pays off big when you start actually using the part.
+Since our design uses flexible arms, the bending stress runs along the length of those arms. That means the way you orient the part on the print bed can make a huge difference in how strong (or weak) it ends up. By lining up the arms so the layer lines run along them instead of across them, you give the print way more resistance to snapping when flexed. It's one of those little tweaks that doesn't take any extra time but pays off when you start actually using the part.
 
 ![3D printing orientation](80_print-orientation.png){: w='500' h='500' }
 _Recommended orientation for 3D printing_
 
 ### Attachment
-Now with a few printed models and the LEDs at hand, I needed to attach them together – this was easily done by using **outdoor-rated double-sided tape**. Good quality tape designed to work in heat and moisture conditions will hold forever (not much strain on it since our parts are extremely lightweight). It is actually very likely to outlast the drone itself.
+Now with a few printed models and the LEDs at hand, I needed to attach them together – this was easily done with **outdoor-rated double-sided tape**. Good quality tape designed to work in heat and moisture conditions will hold forever (not much stress on the bond since our parts are quite lightweight). It is actually very likely to outlast the drone itself.
 
 Here are some final pictures of the LEDs and mounts:
 
@@ -148,7 +150,7 @@ Here are some final pictures of the LEDs and mounts:
 
 ## Final Thoughts
 
-Like any good prototyping, there's a plan for next version – testing PETG prints, different LED angles for better spread, and maybe a solution for controlling the LEDs remotely. You can find the STL file for 3D printing in my github repository [here][github-repo] (where I'll likely upload future revisions as well).
+Like any good prototyping there's a plan for next version – testing PETG prints, different LED angles for better spread, and maybe a solution for controlling the LEDs remotely. You can find the STL file for 3D printing in my github repository [here][github-repo] (where I'll likely upload future revisions as well).
 
 That's about it, enjoy flying!
 
