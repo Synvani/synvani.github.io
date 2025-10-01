@@ -14,11 +14,11 @@ image:
   in_post: true
 ---
 
-In 2022, DJI released the Avata drone. It burst onto the scene as a game-changer in the consumer FPV drone world, offering an immersive flight experience with DJI's renowned UX and safety features. Designed to be nimble and durable, the Avata truly shines when it comes to indoor flight. Its compact size and built-in propeller guards make it inherently robust, allowing confident navigation through tight spaces and reducing the risk of damage from inevitable bumps and scrapes. The visual positioning system provides exceptional stability and precision even without GPS signals, enabling it to maintain its position accurately in cluttered indoor environments and making it a favored choice for capturing dynamic interior footage.
+In 2022, DJI released the Avata drone. It burst onto the scene as a game-changer in the consumer FPV drone world, offering an immersive flight experience with DJI's great UX and safety features. The Avata truly shines when it comes to indoor flight – its compact size and built-in propeller guards make it nimble and durable, allowing confident navigation through tight spaces with low risk of damage from bumps and scrapes. The visual positioning system provides exceptional stability even without GPS signals, enabling it to maintain its position accurately in cluttered indoor environments, making it a favored choice for capturing dynamic interior footage.
 
-## Flying in Darkness
+## No Light
 
-The problem starts when twilight descends or when you simply float into a window-less, light-less room – piloting the drone through dim corridors can feel as unpredictable as chasing fireflies. The optical sensors are starved of contrast and reference points, leaving the drone wobbling each time you try to hover between obstacles, until it inevitably hits something and crashes.
+The problem starts at twilight or when you simply float into a window-less, light-less room – piloting the drone through dim corridors can feel as unpredictable as chasing fireflies. The optical sensors are starved of contrast and reference points, leaving the drone wobbling each time you try to hover between obstacles. Eventually it'll hit something and crash.
 
 ![Avata VPS components](05_avata-vps.png)
 _VPS components of the DJI Avata_
@@ -29,7 +29,7 @@ I started off with some ad-hoc market research: I scoured forums, DJI groups, Th
 
 ## Choosing the Right LED
 
-First things first, I needed a capable LED light that I could design a mount around and attach to the drone. I scanned Amazon and AliExpress for candidates that comply with a few simple prioritized requirements:
+First things first, I needed a capable LED light that I could design a mount around and attach to the drone. I scanned Amazon and AliExpress for candidates that comply with a few prioritized requirements:
 1. **Illumination** – strong enough to light up dark halls and corridors.
 2. **Lightweight** – minimal impact on drone flight time.
 3. **Small profile** – maintain the drone's cross-section and have minimal effect on propeller thrust.
@@ -42,7 +42,7 @@ I ended up with two main candidates to choose from:
 ![LED options: BRDRC vs. Firehouse](10_brdrc-vs-firehouse.png){: w='500' h='400' }
 _BRDRC (left) vs. Firehouse (right)_
 
-As always, when tasked with a tough decision – **the scorecard method is your friend**. I listed all features that mattered to me in a table, assigned weight factors based on my priorities, and scored each candidate with a 1-5 rating based on its compliance/performance:
+As always, when tasked with a tough decision – the scorecard method is your friend. I listed all features that mattered to me in a table, assigned weight factors based on my priorities, and scored each candidate with a 1-5 rating based on its compliance/performance:
 
 | Category            | Weight   | Firehouse       | Score | Weighted | BRDRC           | Score | Weighted |
 | :------------------ | :------- | :-------------- | :---- | :------- | :-------------- | :---- | :------- |
@@ -55,7 +55,7 @@ As always, when tasked with a tough decision – **the scorecard method is your 
 | Charge indication   | 5%       | No              | 2     | 0.10     | Yes             | 5     | 0.25     |
 | **Total**           | **100%** |                 | —     | **3.25** |                 | —     | **4.40** |
 
-With everything factored in, going with **BRDRC** was a no-brainer. It's smaller, lights and offers significantly better bang-for-buck – though I did sacrifice some illumination compared to the Firehouse. That's an acceptable trade-off, given that most low-light flights are planned to be indoors.
+With everything factored in, going with **BRDRC** was a no-brainer. It's smaller, lightweight and offers better bang-for-the-buck – though I did sacrifice some illumination compared to the Firehouse. That's an acceptable trade-off given that most low-light flights are planned to be indoors.
 
 ## Figuring Out a Mounting Solution
 
@@ -83,36 +83,35 @@ The initial step before getting down to actual design work would be deciding whi
 ![Mounting options](20_avata-mount-options.png){: w='400' h='400' }
 _Bottom view of the Avata drone with marked options for mounting_
 
-I decided to move forward with option #2 for these reasons:
-- The diamond-shaped slot provides depth for significantly more robust mounting methods.
-- The depth also means that LEDs can be mounted closer to the fuselage, helping to keep the LEDs tighter with the assembly and maintaining the drone's slim profile.
-- The slots appear on both sides of the fuselage, making it favorable for mounting x2 mounts (with x2 LED lights). 
-  - It's much safer to fly low-light missions – even if one LED fails, you could still finish your mission as planned with the other functioning LED, or at the very least significantly increase your odds of getting the drone back safely in the dark.
+I decided to move forward with option #2 for a few reasons:
+- The diamond-shaped slot provides depth for more robust mounting methods.
+- The depth also means that LEDs can be mounted closer to the fuselage, helping to keep the LEDs tighter with the assembly and preserve the drone's slim profile.
+- The slots appear on both sides of the fuselage, allowing to mount x2 LEDs → safer to fly low-light missions. If one LED fails, you could still finish your mission as planned with the other functioning LED, or at the very least increase your odds of getting the drone back safely in the dark.
 
 ### 3D Measurements
 
-Next, after deciding what component/part of the drone we are going to latch onto, we need to accurately measure that area of the drone in order to properly design a mounting solution that actually fits well. Normally I'd grab a caliper and start measuring, but finding a scanned 3D model online saved me a ton of trial-and-error. Luckily, a quick search in some 3D repositories landed me in [this Thingiverse webpage][dji-avata-model] featuring the DJI Avata body scanned for us by the good soul [goshes][goshes-thingiverse].
+Next, after deciding what part of the drone we'll attach to, we need to measure that area to properly design a mount that actually fits well. Normally I'd grab a caliper and start measuring, but finding a scanned 3D model online saved me a ton of trial-and-error. Luckily, a quick search in some 3D repositories landed me in this [Thingiverse webpage][dji-avata-model] featuring the DJI Avata body scanned for us by the good soul [goshes][goshes-thingiverse].
 
-I loaded the scanned object into my 3D modeling app (SolidWorks) and extracted the exact contour I needed for my mounting solution to fit. This little trick with 3D scanned objects is extremely useful and saved me at least a few iterations of caliper measuring, printing and testing the mount fit vs. real drone body.
+I loaded the scanned object into my 3D modeling app and extracted the exact contour I needed for my mounting solution to fit. Using scanned objects is super efficient and saved me at least a few iterations of caliper measuring, printing and testing the mount fit vs. real drone body.
 
 ![Avata VPS components](30_avata-measure-sketch.png)
 _Measurement sketch drawn on a 3D model of the Avata drone_
 
 ### The Design
 
-With the goal of complying with all requirements specified above, I finally got down to the actual 3D modeling step. Using the measurement sketch from before, I started by designing the **core** of the mount (diamond-like shape that fits in the propeller-guards slot), and around it I derived a few key elements:
+With the goal of meeting all requirements I specified above in my mini-PRD, I finally got down to the actual modeling step. Using the measurement sketch from before, I started by designing the **core** of the mount (diamond-like shape that fits in the propeller-guards slot), and around it I added a few key elements:
 1. **Base plate** – this would be the surface area to which I'd attach the LED. I want it to be slim and match the actual surface area my LED takes (minimize impact on propeller thrust).
 2. **Flexible arms** – these elements will continue upwards from the core, they will be relatively thin to enable flexibility as the mount is pushed into the slot in the drone body.
-3. **Latch teeth** – these elements will merge to the top of the flexible arms and will allow locking the mount into place when fully inserted into the diamond-shaped slot.
-4. **Arm extensions** – this is the top-most part of the flexible arms, it will extrude above the propeller-guards to enable a human operator to flex the arms and detach the mount from the drone body.
+3. **Latch teeth** – these will merge to the top of the flexible arms and will allow locking the mount in place when fully inserted into the diamond-shaped slot.
+4. **Arm extensions** – this is the top-most part of the flexible arms, it will extrude above the propeller-guards. It'll enable the pilot to flex the arms and detach the mount from the drone body.
 
 ![Avata VPS components](40_led-mount-part.png){: w='500' h='500' }
 _LED mount design_
 
-Here are a few more pictures of the assembly:
+Here are a few screenshots of the mount attached to the scanned drone body:
 
 ![Design assembly view](70_assembly-diagonal.png)
-_Mock BRDRC LED (green) attached to the drone with our custom mount (blue)_
+_Mock BRDRC LED (green) attached to the drone with my custom mount (blue)_
 
 ![Design assembly front view](50_assembly-front.png)
 _Front view showcasing the slim profile of a mock BRDRC LED (green) mounted on the drone_
@@ -127,7 +126,7 @@ With the 3D model wrapped up and saved as an STL, I headed over to a friend's pl
 
 ### Printing Material
 
-When it comes to hobbyist 3D printing, it usually comes down to PLA or PETG. PLA is kind of the "default" – it prints easily, doesn't warp much, and is perfect for quick prototypes. PETG, on the other hand, is a bit tougher (literally). It needs higher temps and a bit more fine-tuning to avoid stringing, but it pays off with parts that are stronger, more flexible, and way better at handling moisture or outdoor use. 
+When it comes to hobbyist 3D printing, it usually boils down to PLA or PETG. PLA is kind of the "default" – it prints easily, doesn't warp much, and is perfect for quick prototypes. PETG, on the other hand, is a bit tougher (literally). It needs higher temps and a bit more fine-tuning to avoid stringing, but it pays off with parts that are stronger, more flexible, and way better at handling moisture or outdoor use. 
 
 For the first run I treated the print like an MVP: go fast, validate fit, then iterate. PLA gave me a quick, clean prototype. Once the geometry is proven, PETG can be the "production" version with more durability.
 
@@ -138,7 +137,7 @@ Since our design uses flexible arms, the bending stress runs along the length of
 _Recommended orientation for 3D printing_
 
 ### Attachment
-Now with a few printed models and the LEDs at hand, I needed to attach them together – this was easily done with **outdoor-rated double-sided tape**. Good quality tape designed to work in heat and moisture conditions will hold forever (not much stress on the bond since our parts are quite lightweight). It is actually very likely to outlast the drone itself.
+Now with a few printed models and the LEDs at hand, I needed to attach them together – this was easily done with outdoor-rated double-sided tape. Good quality tape designed to work in heat and moisture conditions will hold forever (not much stress on the bond since our parts are quite lightweight). The bond is actually very likely to outlast the drone itself.
 
 Here are some final pictures of the LEDs and mounts:
 
