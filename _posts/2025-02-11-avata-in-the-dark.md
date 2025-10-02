@@ -2,12 +2,12 @@
 published: true
 title: Avata in the Dark
 author: synvan
-date: 2024-09-20 14:10:00 +0200
+date: 2025-02-11 14:10:00 +0200
 categories: [Product, Hobbies]
 tags: [Drones, FPV, CAD, 3D Modeling, 3D Printing]
 render_with_liquid: false
 description: Turning night-flight headaches into a product-style side project. My journey designing, testing, and iterating an LED mount for the DJI Avata.
-media_subpath: '/assets/img/posts/04_avata-in-the-dark'
+media_subpath: '/assets/img/posts/06_avata-in-the-dark'
 image:
   path: /00_avata-in-the-dark.webp
   alt: 
