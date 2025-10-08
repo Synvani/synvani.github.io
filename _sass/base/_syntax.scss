@@ -243,10 +243,10 @@ div {
     }
 
     &:not([timeout]):hover {
-      background-color: rgb(128 128 128 / 37%);
+      background-color: rgb(22 33 43);
 
       i {
-        color: white;
+        color: rgb(116 178 243);
       }
     }
   }

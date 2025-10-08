@@ -2,7 +2,7 @@
 published: true
 title: Kickstarting Chirpy with a Fork
 author: synvan
-date: 2024-07-20 14:10:00 +0200
+date: 2024-11-15 14:10:00 +0200
 categories: [Blogging, Jekyll]
 tags: [Chirpy, Jekyll, GitHub Pages, Blogging]
 render_with_liquid: false

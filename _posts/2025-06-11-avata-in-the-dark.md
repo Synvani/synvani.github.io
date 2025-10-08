@@ -2,7 +2,7 @@
 published: true
 title: Avata in the Dark
 author: synvan
-date: 2025-02-11 14:10:00 +0200
+date: 2025-06-11 14:10:00 +0200
 categories: [Product, Hobbies]
 tags: [Drones, FPV, CAD, 3D Modeling, 3D Printing]
 render_with_liquid: false

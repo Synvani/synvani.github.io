@@ -2,7 +2,7 @@
 published: true
 title: Deploying Python Dash Apps
 author: synvan
-date: 2024-10-01 14:10:00 +0200
+date: 2025-02-01 14:10:00 +0200
 categories: [Code, Python]
 tags: [Python, Dash, Web app, PythonAnywhere]
 render_with_liquid: false
