@@ -1,10 +1,54 @@
 ---
 permalink: /robots.txt
-# The robots rules
+# Enhanced robots.txt – updated for 2025 AI crawlers
 ---
 
+# =====================================================
+# General crawling rules
+# =====================================================
 User-agent: *
-
 Disallow: /norobots/
-
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
+
+# =====================================================
+# Explicit AI crawler disallows (as of Oct 2025)
+# =====================================================
+
+# OpenAI (ChatGPT / GPTBot)
+User-agent: GPTBot
+Disallow: /
+
+# OpenAI (ChatGPT-User / ChatGPT)
+User-agent: ChatGPT-User
+Disallow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Perplexity
+Disallow: /
+
+# Google AI data extraction crawlers
+User-agent: Google-Extended
+Disallow: /
+
+# Common AI data crawlers / model training bots
+User-agent: FacebookBot
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+
+# =====================================================
+# Notes
+# - Well-behaved search engines (Googlebot, Bingbot, etc.) are still allowed.
+# - AI or data-scraping bots listed above are explicitly disallowed.
+# - Use Cloudflare’s "Block AI crawlers" + Firewall Rules to enforce this.
+# =====================================================
