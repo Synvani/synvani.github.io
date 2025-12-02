@@ -6,7 +6,7 @@ date: 2025-02-01 14:10:00 +0200
 categories: [Code, Python]
 tags: [Python, Dash, Web app, PythonAnywhere]
 render_with_liquid: false
-description: A step-by-step guide to deploying a Python Dash app online using PythonAnywhere – from setup to live demo in minutes.
+description: A step-by-step guide to deploying a Python Dash app online using PythonAnywhere.
 media_subpath: '/assets/img/posts/04_deploy-dash-app'
 image:
   path: 00_python-dash-thumbnail.png
@@ -14,15 +14,15 @@ image:
   in_post: false
 ---
 
-I recently put together a small web app in Python using Dash – it was great fun to build and actually relates to a video game I was playing during peak Covid-19. The app is not too fancy, it lets you adjust many inputs and makes some calculations easier and faster, including plots for better visualization of the results.
+I recently put together a small web app in Python using Dash – it was quite fun to build and actually relates to a video game I was playing during peak Covid-19. The app is not too fancy, it lets you adjust many inputs and makes some calculations easier and faster, including plots for better visualization of the results.
 
-The app worked great on my machine, but at some point I thought it was time to share it with others who might find it useful too. That's when I started looking into how to actually deploy a Dash app so it could live on the web and be accessed by anyone with a browser.
+The app worked great on my machine, but at some point I thought it was time to share it with others who might find it useful too. That's when I started looking into deploying the Dash app online so it could live on the web and be accessed by anyone with a browser.
 
-## Dash App Deployment Options
+## Dash Deployment Options
 
 I started looking into options for hosting my Dash app online with minimal cost – it's a side-project after all with no intention to generate any profit. There are several platforms worth considering, each offers free tier or low-cost tier that get the job done. Each platform has different trade-offs in performance, resource limits, setup, and restrictions.
 
-I did some quick research and tried to put some conclusions in a table:
+I ran a quick research and laid out some info in a table for easier decision-making:
 
 | Platform           | Setup Ease                  | Free Tier Limits                                               | Best For                                |
 | ------------------ | --------------------------- | -------------------------------------------------------------- | --------------------------------------- |
@@ -241,7 +241,7 @@ Don't forget to **Save** the file and **Reload** web app after changes.
 
 - **Python versions mismatch** – the Python version chosen for the web app must match the one used to create your virtualenv.
 
-- **Outbound internet on free tier** – free accounts can only call specific allowed external sites. If your Dash app fetches data from arbitrary APIs, you'll likely hit errors and will need to upgrade your plan. Here's the [list of PythonAnywhere's allowed sites][pythonanywhere-whitelist].
+- **Outbound internet on free tier** – free accounts can only call specific allowed external sites. If your Dash app fetches data from arbitrary APIs, you'll likely hit errors and will need to upgrade your plan. Here's the list of [PythonAnywhere's allowed sites][pythonanywhere-whitelist].
 
 
 ## Updating PythonAnywhere Web App
