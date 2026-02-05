@@ -1,54 +1,15 @@
 ---
 permalink: /robots.txt
-# Enhanced robots.txt – updated for 2025 AI crawlers
 ---
 
-# =====================================================
-# General crawling rules
-# =====================================================
 User-agent: *
-Disallow: /norobots/
-Sitemap: {{ '/sitemap.xml' | absolute_url }}
+Allow: /
 
-# =====================================================
-# Explicit AI crawler disallows (as of Oct 2025)
-# =====================================================
+# Block Jekyll & dev artifacts
+Disallow: /_site/
+Disallow: /.jekyll-cache/
+Disallow: /.git/
+Disallow: /node_modules/
 
-# OpenAI (ChatGPT / GPTBot)
-User-agent: GPTBot
-Disallow: /
-
-# OpenAI (ChatGPT-User / ChatGPT)
-User-agent: ChatGPT-User
-Disallow: /
-
-# Anthropic (Claude)
-User-agent: ClaudeBot
-Disallow: /
-
-# Perplexity AI
-User-agent: PerplexityBot
-Disallow: /
-User-agent: Perplexity
-Disallow: /
-
-# Google AI data extraction crawlers
-User-agent: Google-Extended
-Disallow: /
-
-# Common AI data crawlers / model training bots
-User-agent: FacebookBot
-Disallow: /
-User-agent: CCBot
-Disallow: /
-User-agent: Bytespider
-Disallow: /
-User-agent: Amazonbot
-Disallow: /
-
-# =====================================================
-# Notes
-# - Well-behaved search engines (Googlebot, Bingbot, etc.) are still allowed.
-# - AI or data-scraping bots listed above are explicitly disallowed.
-# - Use Cloudflare’s "Block AI crawlers" + Firewall Rules to enforce this.
-# =====================================================
+# Sitemap
+Sitemap: https://synvan.com/sitemap.xml

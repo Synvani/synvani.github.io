@@ -4,9 +4,9 @@ title: Deploying Python Dash Apps
 author: synvan
 date: 2025-02-01 14:10:00 +0200
 categories: [Code, Python]
-tags: [Python, Dash, Web app, PythonAnywhere]
+tags: [Python, Dash, Webapp, PythonAnywhere]
 render_with_liquid: false
-description: A step-by-step guide to deploying a Python Dash app online using PythonAnywhere.
+description: A step-by-step guide to deploying a Python Dash app online using PythonAnywhere
 media_subpath: '/assets/img/posts/04_deploy-dash-app'
 image:
   path: 00_python-dash-thumbnail.png
